@@ -14,12 +14,15 @@ function AboutPreview() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
         <div className="relative">
-          <img
-            src={aboutImage}
-            alt="Clear View Tree Service Team"
-            className="rounded-3xl shadow-2xl"
-            loading="lazy"
-          />
+         <img
+  src={aboutImage}
+  alt="Clear View Tree Service Team"
+  width="800"
+  height="600"
+  loading="lazy"
+  decoding="async"
+  className="rounded-3xl shadow-2xl"
+/>
 
           <div className="absolute -bottom-8 -right-8 bg-green-700 text-white rounded-2xl px-8 py-6 shadow-xl">
            <p className="text-4xl font-bold">15+</p>
