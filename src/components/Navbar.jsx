@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../assets/images/logo1.webp";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const closeMenu = () => setIsOpen(false);
+
   const navLinkClass = ({ isActive }) =>
     `relative py-2 px-1 font-medium text-sm lg:text-base transition-colors duration-300
     after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full
@@ -65,6 +70,49 @@ function Navbar() {
 >
   Free Estimate
 </Link>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden flex items-center text-gray-700 hover:text-green-700 focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Navigation Dropdown */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-[400px] border-t border-gray-100 bg-white/95 backdrop-blur-md shadow-md" : "max-h-0"
+        }`}
+      >
+        <nav className="flex flex-col px-6 py-4 space-y-4">
+          <NavLink to="/" end className="text-gray-800 font-medium hover:text-green-700" onClick={closeMenu}>
+            Home
+          </NavLink>
+          <NavLink to="/about" className="text-gray-800 font-medium hover:text-green-700" onClick={closeMenu}>
+            About
+          </NavLink>
+          <NavLink to="/services" className="text-gray-800 font-medium hover:text-green-700" onClick={closeMenu}>
+            Services
+          </NavLink>
+          <NavLink to="/blog" className="text-gray-800 font-medium hover:text-green-700" onClick={closeMenu}>
+            Blog
+          </NavLink>
+          <NavLink to="/contact" className="text-gray-800 font-medium hover:text-green-700" onClick={closeMenu}>
+            Contact
+          </NavLink>
+          <div className="pt-2">
+            <Link
+              to="/contact"
+              className="flex w-full items-center justify-center rounded-full bg-green-700 px-6 py-3 text-sm font-semibold text-white shadow-md transition-colors hover:bg-green-800"
+              onClick={closeMenu}
+            >
+              Free Estimate
+            </Link>
+          </div>
+        </nav>
       </div>
     </header>
   );
