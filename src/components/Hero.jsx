@@ -6,16 +6,15 @@ function Hero() {
     <section className="relative flex min-h-[90vh] items-center overflow-hidden">
       {/* Background Image */}
       <img
-        src={heroImage}
-        alt="Professional tree service in Syracuse"
-        width="1600"
-        height="900"
-        loading="eager"
-        fetchPriority="high"
-        decoding="async"
-        className="absolute inset-0 h-full w-full object-cover"
-      />
-
+  src={heroImage}
+  alt="Professional tree service in Syracuse"
+  width="1280"
+  height="720"
+  loading="eager"
+  fetchPriority="high"
+  decoding="async"
+  className="absolute inset-0 h-full w-full object-cover"
+/>
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/55"></div>
 

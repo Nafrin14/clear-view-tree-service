@@ -48,10 +48,11 @@ function Testimonials() {
             >
               <FaQuoteLeft className="mb-6 text-4xl text-green-200" />
 
-              <div
-                className="mb-5 flex gap-1 text-yellow-500"
-                aria-label="5 out of 5 stars"
-              >
+             <div
+  className="mb-5 flex gap-1 text-yellow-500"
+  role="img"
+  aria-label="5 out of 5 stars"
+>
                 {[1, 2, 3, 4, 5].map((star) => (
                   <FaStar key={star} />
                 ))}

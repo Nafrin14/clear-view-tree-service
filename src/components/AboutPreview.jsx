@@ -22,8 +22,8 @@ function AboutPreview() {
           />
 
           <div className="absolute -bottom-8 -right-8 bg-green-700 text-white rounded-2xl px-8 py-6 shadow-xl">
-            <h3 className="text-4xl font-bold">15+</h3>
-            <p>Years Experience</p>
+           <p className="text-4xl font-bold">15+</p>
+<p>Years Experience</p>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ function AboutPreview() {
             <div className="flex gap-4">
               <FaShieldAlt className="text-3xl text-green-700 mt-1" />
               <div>
-                <h4 className="font-bold">Licensed & Insured</h4>
+               <h3 className="font-bold">Licensed & Insured</h3>
                 <p className="text-gray-600">
                   Complete protection for your property.
                 </p>
@@ -58,7 +58,7 @@ function AboutPreview() {
             <div className="flex gap-4">
               <FaClock className="text-3xl text-green-700 mt-1" />
               <div>
-                <h4 className="font-bold">24/7 Emergency</h4>
+               <h3 className="font-bold">24/7 Emergency</h3>
                 <p className="text-gray-600">
                   Fast emergency response.
                 </p>
@@ -68,7 +68,7 @@ function AboutPreview() {
             <div className="flex gap-4">
               <FaAward className="text-3xl text-green-700 mt-1" />
               <div>
-                <h4 className="font-bold">Experienced Team</h4>
+               <h3 className="font-bold">Experienced Team</h3>
                 <p className="text-gray-600">
                   Skilled tree care professionals.
                 </p>
@@ -78,7 +78,7 @@ function AboutPreview() {
             <div className="flex gap-4">
               <FaCheckCircle className="text-3xl text-green-700 mt-1" />
               <div>
-                <h4 className="font-bold">Customer Satisfaction</h4>
+               <h3 className="font-bold">Customer Satisfaction</h3>
                 <p className="text-gray-600">
                   Quality work on every project.
                 </p>
