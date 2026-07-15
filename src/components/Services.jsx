@@ -2,8 +2,9 @@ import treeRemoval from "../assets/images/tree-removal.webp";
 import treeTrimming from "../assets/images/tree-trimming.webp";
 import stumpGrinding from "../assets/images/stump-grinding.webp";
 import emergencyTree from "../assets/images/emergency-tree.webp";
-import landClearing from "../assets/images//land-clearing.webp";
+import landClearing from "../assets/images/land-clearing.webp";
 import stormCleanup from "../assets/images/storm-cleanup.webp";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -71,15 +72,15 @@ function Services() {
               className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
              <div className="h-56 overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  width="800"
-                  height="500"
-                  loading="lazy"
-                  decoding="async"
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
-                />
+               <img
+  src={service.image}
+  alt={`${service.title} service in Syracuse`}
+  width="600"
+  height="400"
+  loading="lazy"
+  decoding="async"
+  className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+/>
               </div>
 
              <div className="p-6">
@@ -91,12 +92,12 @@ function Services() {
                   {service.description}
                 </p>
 
-                <a
-                  href="/contact"
-                  className="mt-6 inline-flex font-semibold text-green-700 transition hover:text-green-900"
-                >
-                  Get Free Estimate →
-                </a>
+               <Link
+  to="/contact"
+  className="mt-6 inline-flex font-semibold text-green-700 transition hover:text-green-900"
+>
+  Get Free Estimate →
+</Link>
               </div>
             </article>
           ))}

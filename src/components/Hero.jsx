@@ -7,14 +7,15 @@ function Hero() {
 
       {/* Background Image */}
       <img
-        src={heroImage}
-        alt="Clear View Tree Service"
-        width="1920"
-        height="1080"
-        loading="eager"
-        fetchPriority="high"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+  src={hero}
+  alt="Professional tree service in Syracuse"
+  width="1600"
+  height="900"
+  loading="eager"
+  fetchPriority="high"
+  decoding="async"
+  className="absolute inset-0 h-full w-full object-cover"
+/>
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/55"></div>
