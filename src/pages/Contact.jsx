@@ -99,7 +99,7 @@ function Contact() {
                     href="mailto:info@clearviewtreeservice.com"
                     className="text-gray-600 hover:text-green-700"
                   >
-                    info@clearviewtreeservice.com
+                    
                   </a>
                 </div>
               </div>

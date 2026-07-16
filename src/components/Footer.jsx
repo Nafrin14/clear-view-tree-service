@@ -97,7 +97,7 @@ function Footer() {
                 aria-hidden="true"
                 className="mt-1 shrink-0 text-green-300"
               />
-              <span>info@clearviewtreeservice.com</span>
+              <span> </span>
             </a>
 
             <div className="flex items-start gap-3">

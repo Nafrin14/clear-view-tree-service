@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-3 md:py-4">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-3 md:py-1">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 shrink-0 group transition-transform hover:scale-[1.02]">
           <img
